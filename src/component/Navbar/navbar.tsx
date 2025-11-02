@@ -31,11 +31,11 @@ const Navbar = (props: Props) => {
         height={100}
         className="transition-all duration-300"
       />
-      <h1 className="text-xl font-bold py-2">Time is of the essence
+      <Link href="/" className="text-xl font-bold py-2">Time is of the essence
         <br />
         <div className="h-[2px] bg-orange-500"/>
         Freight Logestics
-      </h1>
+      </Link>
       <div className="md:ml-auto px-2 flex flex-col md:flex-row gap-y-2 gap-x-2 md:items-center md:justify-center [&>a:hover]:bg-orange-500 [&>a:hover]:text-white [&>a]:rounded-md [&>a]:transition [&>a]:duration-200 [&>a]:px-4 md:[&>a]:py-2 [&>a]:py-1">
         <Link href="/" className={cn({ "bg-orange-500 text-white": pathname === "/" })}>
           Home
