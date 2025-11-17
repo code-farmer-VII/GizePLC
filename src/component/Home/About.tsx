@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import truckImage from "../../Asset/Image/giza.png";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -32,17 +33,19 @@ export default function AboutSection() {
           solutions, ensuring every shipment arrives on time, every time.
         </motion.p>
 
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition"
-          initial={{ opacity: 0, x: -80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          Learn More
-        </motion.button>
+        <Link href="/about" passHref>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition cursor-pointer"
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            Learn More
+          </motion.button>
+        </Link>
       </div>
 
       {/* Right Side - Image */}
