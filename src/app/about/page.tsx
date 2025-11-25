@@ -1,4 +1,3 @@
-import Footer from '@/component/Home/Footer'
 import AboutSection from '../../component/About/AboutSection'
 import GoalSection from '../../component/About/Goal'
 import Hero from '../../component/About/HeroAbout'
@@ -16,7 +15,6 @@ export default function page() {
       <ResearchingConsultant />
       <GoalSection />
       <HeroSection />
-      <Footer />
       </div>
     </div>
   )

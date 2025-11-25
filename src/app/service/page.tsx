@@ -2,19 +2,17 @@
 import React from 'react'
 import HeroSection from '../../component/About/HeroSection'
 import HeroService from '@/component/Services/HeroService'
-import ServicesSection from '@/component/Services/ServiceHome'
-import Footer from '@/component/Home/Footer'
+import Services from '@/component/Home/Services'
 
 
 export default function page() {
   return (
     <div>
       <HeroService />
-      <ServicesSection />
+      <Services />
       <div className='bg-white'>
         <HeroSection />
       </div>
-        <Footer />
     </div>
   )
 }

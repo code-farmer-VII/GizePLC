@@ -50,7 +50,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row justify-between items-stretch gap-6 lg:gap-8">
           {/* Title */}
           <motion.div
-            className="flex-1 flex items-center justify-center lg:justify-start"
+            className="flex-1 flex items-center justify-center lg:justify-start pt-20"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}

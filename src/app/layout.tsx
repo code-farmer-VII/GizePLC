@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Geist ,Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import NavbarContainer from "@/component/Navbar/NavbarContainer";
 import Navbar from "@/component/Navbar/navbar";
 import logo from "@/app/logo-gize.jpg"
+import DesktopNavbar from "@/component/Navbar/desktopNavbar";
+import Footer from "@/component/Home/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -29,13 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-          <NavbarContainer>
-            <Navbar />
-          </NavbarContainer>
+      <body className={`${inter.variable} font-sans antialiased`}>
+        <Navbar />
         {children}
+           <Footer />
       </body>
     </html>
   );
