@@ -114,7 +114,7 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <Link
-              href="/services"
+              href="/service"
               className="bg-orange-500 text-white px-8 py-4 rounded-lg hover:bg-orange-600 transition-colors font-medium text-lg"
             >
               View All Services

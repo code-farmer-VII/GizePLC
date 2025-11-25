@@ -50,7 +50,7 @@ export default function Navbar() {
           />
 
           <div className="text-xl font-bold leading-tight">
-            Time is key essence
+            Time is key
             <div className="h-[2px] bg-orange-500 mt-1" />
             Freight Logistics
           </div>
@@ -108,7 +108,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2 mb-8 text-black">
           <Image src={logoLight} alt="logo" width={80} height={80} />
           <div className="font-bold">
-            Time is key essence
+            Time is key
             <div className="h-[2px] bg-orange-500" />
             Freight Logistics
           </div>
